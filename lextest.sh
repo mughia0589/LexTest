@@ -1,3 +1,4 @@
+cd /home
 myworker=$(date +'%d%m_%H%M%S_A1_')
 username=$USER
 myworker+=$username
